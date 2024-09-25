@@ -8,6 +8,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { CommandMenu } from "@/components/command-menu";
 import { Icons } from "@/components/icons";
 import { SEO_METADATA } from "@/constants/seo";
+import { GoogleAnalytics } from "@/components/google-analytics";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,6 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
+      <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground max-w-7xl mx-auto`}
       >
