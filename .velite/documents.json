@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Sidebar",
+    "description": "Sidebar",
+    "published": true,
+    "links": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "About",
+        "url": "/about"
+      }
+    ],
+    "featured": false,
+    "component": false,
+    "toc": [
+      {
+        "title": "Installation",
+        "url": "#installation",
+        "items": []
+      },
+      {
+        "title": "Usage",
+        "url": "#usage",
+        "items": []
+      }
+    ],
+    "slug": "sidebar",
+    "metadata": {
+      "readingTime": 1,
+      "wordCount": 21
+    },
+    "content": "const{Fragment:e,jsx:n,jsxs:l}=arguments[0];function _createMdxContent(r){const a={code:\"code\",figure:\"figure\",h2:\"h2\",pre:\"pre\",span:\"span\",...r.components},{ComponentPreview:s,Tabs:c,TabsContent:t,TabsList:d,TabsTrigger:o}=a;return s||_missingMdxReference(\"ComponentPreview\",!0),c||_missingMdxReference(\"Tabs\",!0),t||_missingMdxReference(\"TabsContent\",!0),d||_missingMdxReference(\"TabsList\",!0),o||_missingMdxReference(\"TabsTrigger\",!0),l(e,{children:[n(a.h2,{id:\"installation\",children:\"Installation\"}),\"\\n\",n(s,{name:\"sidebar-01\"}),\"\\n\",l(c,{defaultValue:\"cli\",children:[n(d,{children:n(o,{value:\"cli\",children:\"CLI\"})}),n(t,{value:\"cli\",children:n(a.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(a.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",children:n(a.code,{\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#DCDCAA\"},children:\"npx\"}),n(a.span,{style:{color:\"#CE9178\"},children:\" shadcn@latest\"}),n(a.span,{style:{color:\"#CE9178\"},children:\" add\"}),n(a.span,{style:{color:\"#CE9178\"},children:\" accordion\"})]})})})})})]}),\"\\n\",n(a.h2,{id:\"usage\",children:\"Usage\"}),\"\\n\",n(a.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(a.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:n(a.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#C586C0\"},children:\"import\"}),n(a.span,{style:{color:\"#9CDCFE\"},children:\" Sidebar1\"}),n(a.span,{style:{color:\"#C586C0\"},children:\" from\"}),n(a.span,{style:{color:\"#CE9178\"},children:' \"@/components/block/sidebar-01/sidebar-01\"'}),n(a.span,{style:{color:\"#D4D4D4\"},children:\";\"})]})})})}),\"\\n\",n(\"br\",{}),\"\\n\",n(a.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(a.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:l(a.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:[l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"<\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"div\"}),n(a.span,{style:{color:\"#9CDCFE\"},children:\" className\"}),n(a.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(a.span,{style:{color:\"#CE9178\"},children:'\"flex gap-2\"'}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"  <\"}),n(a.span,{style:{color:\"#4EC9B0\"},children:\"Sidebar1\"}),n(a.span,{style:{color:\"#808080\"},children:\" />\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"  <\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"main\"}),n(a.span,{style:{color:\"#9CDCFE\"},children:\" className\"}),n(a.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(a.span,{style:{color:\"#CE9178\"},children:'\"flex w-full justify-center text-5xl flex-col\"'}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#569CD6\"},children:\"    {\"}),n(a.span,{style:{color:\"#6A9955\"},children:\"/* your page content goes here */\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"}\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"  </\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"main\"}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"</\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"div\"}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]})]})})})]})}return{default:function(e={}){const{wrapper:l}=e.components||{};return l?n(l,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};function _missingMdxReference(e,n){throw new Error(\"Expected \"+(n?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}",
+    "permalink": "/docs/sidebar"
+  }
+]
