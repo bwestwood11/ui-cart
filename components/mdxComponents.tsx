@@ -176,7 +176,7 @@ const sharedComponents = {
   ),
 
   pre: ({ className, ...props }: React.HTMLAttributes<HTMLPreElement>) => {
-    // eslint-disable-next-line disabling this rule because we can't capitalize p in the pre.
+    // eslint-disable-next-line 
     const [copied, setCopied] = React.useState(false);
     const onCopy = () => {
       const text = getPlainTextFromReactNode(props.children);
