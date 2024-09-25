@@ -1,0 +1,86 @@
+import { Metadata } from "next";
+
+export const SEO_METADATA = {
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "UI Cart - Get Access to UI Components",
+    description:
+      "UI Cart is a library of UI components and blocks that uses Shadcn CLI to deliver a seamless experience for developers.",
+    url: "https://www.uicart.io",
+    siteName: "UICart.io",
+    // images: [
+    //   {
+    //     url: "/screenshot.jpg",
+    //     width: 800,
+    //     height: 600,
+    //   },
+    // ],
+    locale: "en_US",
+    type: "website",
+  },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "ChatBuild Ai - Build Chatbot Widgets for Your Website",
+//     description:
+//       "ChatBuild.io is a platform that empowers people to easily create and customize chatbot widgets to enhance user experience on their websites.",
+//     images: [
+//       {
+//         url: "https://utfs.io/f/712ac3ae-057c-4499-af93-46b4c4221f92-7d9o2c.png",
+//         width: 800,
+//         height: 600,
+//       },
+//     ],
+//   },
+  category: "technology",
+  generator: "Next.js",
+  applicationName: "UI Cart",
+  referrer: "origin-when-cross-origin",
+//   keywords: [
+//     "ChatBuilder",
+//     "ChatBuilder.io",
+//     "Chat widget builder",
+//     "Chatbot creator",
+//     "Website chatbot",
+//     "AI chatbot builder",
+//     "Widget development",
+//     "Chatbot widget platform",
+//     "Conversational AI tool",
+//     "Chatbot integration",
+//     "User engagement tools",
+//     "Website enhancement tools",
+//     "Widget customization",
+//     "Developer-friendly chatbot",
+//     "Chatbot API",
+//     "Ai Widget",
+//     "How To Add Widget to website",
+//     "Chatbot API",
+//     "Website assistant",
+//     "Interactive chat widget",
+//     "AI-powered chatbots",
+//     "Custom chatbot solutions",
+//     "Engagement widget",
+//     "Customer support widget",
+//     "Online chatbot creator",
+//     "Automated customer service",
+//     "Virtual assistant for website",
+//     "Chatbot deployment platform",
+//     "Conversational UX design",
+//     "AI-driven customer interactions",
+//     "Website automation tools",
+//   ],
+  authors: [{ name: "Brett Westwood" }, { name: "Diwanshu Midha" }],
+  creator: "Brett Westwood",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+  },
+  verification: {},
+} satisfies Metadata;
