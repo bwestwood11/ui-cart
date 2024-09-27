@@ -1,7 +1,9 @@
+import Sidebar02 from "@/registry/block/sidebar-02/sidebar-02";
+
 export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto ">
-      Home Page
+    <div className="h-[200vh] w-full ">
+      <Sidebar02 />
     </div>
   );
 }
