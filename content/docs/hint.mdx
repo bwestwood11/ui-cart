@@ -1,6 +1,6 @@
 ---
 title: "Hint"
-description: "Hint"
+description: "A popup tooltip that appears when you hover over an element."
 published: true
 links:
   - title: "Home"
@@ -38,11 +38,61 @@ import Hint from "@/components/ui/hint";
 
 <br />
 ```tsx
-<Hint content="This is a hint">
+<Hint asChild content="This is a hint">
   <button>Hover me</button>
 </Hint>
 ```
 
-## Props
+## Examples
 
+### Without Animations
+
+You can enable or disable the bounce effect by passing the `isAnimating` prop. By default, the bounce effect is enabled.
+<br />
+```tsx
+<Hint asChild content="This is a hint" isAnimating={false}>
+  <button>Hover me</button>
+</Hint>
+```
+
+### Adjust Bounce Effect
+
+You can adjust the stiffness of the bounce effect by passing the `animationStiffness` prop. The higher the value the more bouncy the effect will be.
+<br />
+```tsx
+<Hint asChild content="This is a hint" animationStiffness={100}>
+  <button>Hover me</button>
+</Hint>
+```
+
+### Animation Entrance Direction
+
+You can adjust the direction of the bounce effect by passing the `animationFrom` prop. By default, the bounce effect is from the top. You can set it to `left`, `right`, `top`, or `bottom`.
+<br />
+
+```tsx
+<Hint asChild content="This is a hint" animationFrom="left">
+  <button>Hover me</button>
+</Hint>
+```
+
+### Disable The ToolTip
+
+You can disable the tooltip by passing the `enabled` prop. By default, the tooltip is enabled.
+<br />
+```tsx
+<Hint asChild content="This is a hint" enabled={false}>
+  <button>Hover me</button>
+</Hint>
+```
+
+### Delay The Hint
+
+You can delay the hint by passing the `delay` prop. By default, the delay is 0.
+<br />
+```tsx
+<Hint asChild content="This is a hint" delay={1000}>
+  <button>Hover me</button>
+</Hint>
+```
 
