@@ -1,0 +1,48 @@
+---
+title: "Hint"
+description: "Hint"
+published: true
+links:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about"
+slug: "hint"
+---
+
+## Installation
+
+<ComponentPreview name="hint" />
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add https://www.uicart.io/registry/hint.json
+```
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import Hint from "@/components/ui/hint";
+```
+
+<br />
+```tsx
+<Hint content="This is a hint">
+  <button>Hover me</button>
+</Hint>
+```
+
+## Props
+
+

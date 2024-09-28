@@ -6,17 +6,21 @@ import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { components } from "@/__registry__";
 import { Button } from "./ui/button";
-
+import { Loader2 } from "lucide-react";
 
 interface ComponentPreviewProps extends React.HTMLAttributes<HTMLDivElement> {
   name: keyof typeof components;
   // description?: string;
   hideCode?: boolean;
+  align?: "start" | "center" | "end";
+  shouldExpand?: boolean;
 }
 
 export function ComponentPreview({
   name,
   className,
+  align = "center",
+  shouldExpand = false,
   // description,
   hideCode = false,
   ...props
@@ -107,44 +111,42 @@ export function ComponentPreview({
             "relative rounded-md border"
           )}
         >
-          <div className="absolute bottom-0 right-0 left-0 w-full h-[200px] bg-gradient-to-t from-background to-transparent z-[19]"></div>
-          <Button
-            variant="outline"
-            className="absolute right-1/2 translate-x-1/2 bottom-5 z-[20]"
-            onClick={() => setIsExpanded(!isExpanded)}
-          >
-            {!isExpanded ? "Expand" : "Collapse"}
-          </Button>
-
-          <div className="flex items-center w-full justify-center p-4">
-            <div className="flex items-center gap-2">
-              {/* <Link href={`/preview/${components[name].type}/${name}`} className={buttonVariants({className: ""})}>
-                      Preview Component
-         </Link> */}
-              {Preview}
-            </div>
-          </div>
-          {/* <div
-              className={cn(
-                "preview flex min-h-[350px] w-full justify-center p-10",
-                {
-                  "items-center": align === "center",
-                  "items-start": align === "start",
-                  "items-end": align === "end",
-                }
+          {shouldExpand && (
+            <>
+              {!isExpanded && (
+                <div className="absolute bottom-0 right-0 left-0 w-full h-[200px] bg-gradient-to-t from-background to-transparent z-[19]"></div>
               )}
-            >
-              <React.Suspense
-                fallback={
-                  <div className="flex w-full items-center justify-center text-sm text-muted-foreground">
-                    <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
-                    Loading...
-                  </div>
-                }
+              <Button
+                variant="outline"
+                className="absolute right-1/2 translate-x-1/2 bottom-5 z-[20]"
+                onClick={() => setIsExpanded(!isExpanded)}
               >
-                {Preview}
-              </React.Suspense>
-            </div> */}
+                {!isExpanded ? "Expand" : "Collapse"}
+              </Button>
+            </>
+          )}
+
+          <div
+            className={cn(
+              "preview flex min-h-[350px] w-full justify-center p-10",
+              {
+                "items-center": align === "center",
+                "items-start": align === "start",
+                "items-end": align === "end",
+              }
+            )}
+          >
+            <React.Suspense
+              fallback={
+                <div className="flex w-full items-center justify-center text-sm text-muted-foreground">
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  Loading...
+                </div>
+              }
+            >
+              {Preview}
+            </React.Suspense>
+          </div>
         </TabsContent>
         {files.map((file) => {
           return (
@@ -155,7 +157,9 @@ export function ComponentPreview({
                     className="text-sm text-muted-foreground"
                     key={file.path}
                   >
-                    <code className="block break-words text-wrap">{file.content}</code>
+                    <code className="block break-words text-wrap">
+                      {file.content}
+                    </code>
                   </pre>
                 </div>
               </div>

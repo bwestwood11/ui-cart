@@ -14,7 +14,7 @@ export default function Home({ params }: { params: { slug: string } }) {
   return (
     <div className="flex gap-3">
       <div className="w-full py-6 lg:py-8 px-3">
-        <MDXContent code={documents[0].content} />
+        <MDXContent code={doc.content} />
       </div>
       <div className="hidden text-sm xl:block py-6 lg:py-8">
         <div className="sticky top-20 h-[calc(100vh-3.5rem)]">
