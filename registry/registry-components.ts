@@ -28,7 +28,10 @@ export const ui: Registry = [
   {
     name: "sidebar-02",
     type: "registry:block",
-    registryDependencies: ["progress", "hint"],
+    registryDependencies: [
+      "progress",
+      "https://www.uicart.io/registry/hint.json",
+    ],
     dependencies: ["framer-motion", "lucide-react"],
     files: ["block/sidebar-02/sidebar-02.tsx"],
   },

@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Tooltip,
   TooltipContent,
@@ -12,6 +14,7 @@ type HintProps = {
   animationFrom?: "top" | "bottom" | "left" | "right";
   defaultOpen?: boolean;
   className?: string;
+  asChild?: boolean;
   onOpenChange?: (isOpen: boolean) => void;
   isAnimating?: boolean;
   enabled?: boolean;
@@ -25,6 +28,7 @@ export function Hint({
   children,
   className,
   animationFrom = "top",
+  asChild = false,
   defaultOpen = false,
   onOpenChange,
   enabled = true,
@@ -68,7 +72,7 @@ export function Hint({
         onOpenChange={onOpenChange}
         defaultOpen={defaultOpen}
       >
-        <TooltipTrigger asChild>{children}</TooltipTrigger>
+        <TooltipTrigger asChild={asChild}>{children}</TooltipTrigger>
         <TooltipContent side={animationFrom} asChild>
           <motion.p
             variants={variants}

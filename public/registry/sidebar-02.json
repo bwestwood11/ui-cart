@@ -3,7 +3,7 @@
   "type": "registry:block",
   "registryDependencies": [
     "progress",
-    "hint"
+    "https://www.uicart.io/registry/hint.json"
   ],
   "dependencies": [
     "framer-motion",
