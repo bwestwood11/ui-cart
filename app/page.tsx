@@ -2,7 +2,7 @@
 
 import Particles from "@/components/ui/particles";
 import { ArrowTopRightIcon, GitHubLogoIcon } from "@radix-ui/react-icons";
-import { ArrowBigRight, BatteryFull, ChevronRight } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
