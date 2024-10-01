@@ -1,3 +1,4 @@
+import { Fullscreen } from "lucide-react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -10,6 +11,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      height: {
+        fullscreen: "calc(100svh - 56px)",
+      },
       animation: {
         ripple: "ripple 0.6s ease-out",
       },

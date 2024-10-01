@@ -91,7 +91,11 @@ export function Hint({
 
 const HintPreview = () => {
   return (
-    <Hint content="This is a hint">
+    <Hint
+     animationStiffness={100}
+     delay={0.5} 
+     content="This is the hint text"
+     >
       <button>Hover me</button>
     </Hint>
   );
