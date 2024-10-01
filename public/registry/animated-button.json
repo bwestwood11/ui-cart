@@ -1,0 +1,38 @@
+{
+  "name": "animated-button",
+  "type": "registry:ui",
+  "registryDependencies": [
+    "button"
+  ],
+  "tailwind": {
+    "config": {
+      "theme": {
+        "extend": {
+          "animation": {
+            "ripple": "ripple 0.6s ease-out"
+          },
+          "keyframes": {
+            "ripple": {
+              "0%": {
+                "transform": "scale(0)",
+                "opacity": "1"
+              },
+              "100%": {
+                "transform": "scale(4)",
+                "opacity": "0"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "files": [
+    {
+      "type": "registry:ui",
+      "content": "\"use client\"\r\nimport React from \"react\";\r\n\r\nimport { Loader2 } from \"lucide-react\";\r\nimport { VariantProps } from \"class-variance-authority\";\r\nimport { cn } from \"@/lib/utils\";\r\nimport { buttonVariants } from \"@/components/ui/button\";\r\n\r\nexport interface ButtonProps\r\n  extends React.ButtonHTMLAttributes<HTMLButtonElement>,\r\n    VariantProps<typeof buttonVariants> {\r\n  isLoading?: boolean;\r\n  showClickEffect?: boolean;\r\n  startContent?: React.ReactNode;\r\n  endContent?: React.ReactNode;\r\n}\r\n\r\ninterface Ripple {\r\n  x: number;\r\n  y: number;\r\n}\r\n\r\nexport const useRipple = () => {\r\n  const [ripples, setRipples] = React.useState<Ripple[]>([]);\r\n\r\n  const handleClick = React.useCallback(\r\n    (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {\r\n      const rect = e.currentTarget.getBoundingClientRect();\r\n      const x = e.clientX - rect.left;\r\n      const y = e.clientY - rect.top;\r\n\r\n      setRipples((currentRipples) => [...currentRipples, { x, y }]);\r\n\r\n      setTimeout(() => {\r\n        setRipples((currentRipples) => currentRipples.slice(1));\r\n      }, 300);\r\n    },\r\n    []\r\n  );\r\n\r\n  return { ripples, handleClick };\r\n};\r\n\r\nconst BUTTON_ANIMATION_CLASSNAMES =\r\n  \"relative active:scale-95 overflow-hidden transition-all duration-600\";\r\n\r\nconst AnimatedButton = React.forwardRef<HTMLButtonElement, ButtonProps>(\r\n  (\r\n    {\r\n      className,\r\n      variant,\r\n      size,\r\n      isLoading = false,\r\n      showClickEffect = true,\r\n      startContent,\r\n      endContent,\r\n      ...props\r\n    },\r\n    ref\r\n  ) => {\r\n    const { ripples, handleClick } = useRipple();\r\n\r\n    return (\r\n      <button\r\n        className={cn(\r\n          buttonVariants({ variant, size, className }),\r\n          !!showClickEffect && BUTTON_ANIMATION_CLASSNAMES\r\n        )}\r\n        ref={ref}\r\n        disabled={props.disabled || isLoading}\r\n        onClick={(e) => {\r\n          if (showClickEffect) {\r\n            handleClick(e);\r\n          }\r\n          if (props.onClick) props.onClick(e);\r\n        }}\r\n        {...props}\r\n      >\r\n        {!!startContent && !isLoading ? startContent : null}\r\n        {isLoading ? <Loader2 className=\"animate-spin size-4 mr-2\" /> : null}\r\n        {props.children}\r\n        {endContent}\r\n\r\n        {/* Ripples */}\r\n        {ripples.map((ripple, index) => (\r\n          <span\r\n            key={index}\r\n            className=\"absolute bg-white bg-opacity-30 rounded-full transform scale-0 animate-ripple\"\r\n            style={{\r\n              top: ripple.y - 20 + \"px\", // Center the ripple\r\n              left: ripple.x - 20 + \"px\",\r\n              width: \"40px\",\r\n              height: \"40px\",\r\n            }}\r\n          ></span>\r\n        ))}\r\n      </button>\r\n    );\r\n  }\r\n);\r\n\r\nAnimatedButton.displayName = \"Button\";\r\n\r\nexport { AnimatedButton };\r\n",
+      "path": "ui/animated-button.tsx",
+      "target": "components/ui/animated-button.tsx"
+    }
+  ]
+}

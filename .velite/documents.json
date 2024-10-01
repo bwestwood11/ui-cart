@@ -1,5 +1,67 @@
 [
   {
+    "title": "Animated Button",
+    "description": "A button with a ripple effect that animates when clicked.",
+    "published": true,
+    "links": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "About",
+        "url": "/about"
+      }
+    ],
+    "featured": false,
+    "component": false,
+    "toc": [
+      {
+        "title": "Installation",
+        "url": "#installation",
+        "items": []
+      },
+      {
+        "title": "Usage",
+        "url": "#usage",
+        "items": []
+      },
+      {
+        "title": "Examples",
+        "url": "#examples",
+        "items": [
+          {
+            "title": "With Loading State",
+            "url": "#with-loading-state",
+            "items": []
+          },
+          {
+            "title": "Disabling Click Effect",
+            "url": "#disabling-click-effect",
+            "items": []
+          },
+          {
+            "title": "Adding Icon",
+            "url": "#adding-icon",
+            "items": []
+          },
+          {
+            "title": "And All Shadcn Button Props",
+            "url": "#and-all-shadcn-button-props",
+            "items": []
+          }
+        ]
+      }
+    ],
+    "slug": "animated-button",
+    "metadata": {
+      "readingTime": 1,
+      "wordCount": 130
+    },
+    "content": "const{Fragment:e,jsx:n,jsxs:l}=arguments[0];function _createMdxContent(a){const r={code:\"code\",figure:\"figure\",h2:\"h2\",h3:\"h3\",p:\"p\",pre:\"pre\",span:\"span\",...a.components},{ComponentPreview:t,Tabs:d,TabsContent:o,TabsList:c,TabsTrigger:s}=r;return t||_missingMdxReference(\"ComponentPreview\",!0),d||_missingMdxReference(\"Tabs\",!0),o||_missingMdxReference(\"TabsContent\",!0),c||_missingMdxReference(\"TabsList\",!0),s||_missingMdxReference(\"TabsTrigger\",!0),l(e,{children:[n(r.h2,{id:\"installation\",children:\"Installation\"}),\"\\n\",n(t,{name:\"animated-button\"}),\"\\n\",l(d,{defaultValue:\"cli\",children:[n(c,{children:n(s,{value:\"cli\",children:\"CLI\"})}),n(o,{value:\"cli\",children:n(r.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(r.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",children:n(r.code,{\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#DCDCAA\"},children:\"npx\"}),n(r.span,{style:{color:\"#CE9178\"},children:\" shadcn@latest\"}),n(r.span,{style:{color:\"#CE9178\"},children:\" add\"}),n(r.span,{style:{color:\"#CE9178\"},children:\" https://www.uicart.io/registry/animated-button.json\"})]})})})})})]}),\"\\n\",n(r.h2,{id:\"usage\",children:\"Usage\"}),\"\\n\",n(r.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(r.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:n(r.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#C586C0\"},children:\"import\"}),n(r.span,{style:{color:\"#9CDCFE\"},children:\" AnimatedButton\"}),n(r.span,{style:{color:\"#C586C0\"},children:\" from\"}),n(r.span,{style:{color:\"#CE9178\"},children:' \"@/components/ui/animated-button\"'}),n(r.span,{style:{color:\"#D4D4D4\"},children:\";\"})]})})})}),\"\\n\",n(\"br\",{}),\"\\n\",n(r.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(r.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:l(r.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:[l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#808080\"},children:\"<\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"AnimatedButton\"})]}),\"\\n\",l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#9CDCFE\"},children:\"  startContent\"}),n(r.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(r.span,{style:{color:\"#569CD6\"},children:\"{\"}),n(r.span,{style:{color:\"#808080\"},children:\"<\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"LogInIcon\"}),n(r.span,{style:{color:\"#9CDCFE\"},children:\" className\"}),n(r.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(r.span,{style:{color:\"#CE9178\"},children:'\"size-4 mr-2\"'}),n(r.span,{style:{color:\"#808080\"},children:\" />\"}),n(r.span,{style:{color:\"#569CD6\"},children:\"}\"})]}),\"\\n\",n(r.span,{\"data-line\":\"\",children:n(r.span,{style:{color:\"#808080\"},children:\">\"})}),\"\\n\",n(r.span,{\"data-line\":\"\",children:n(r.span,{style:{color:\"#D4D4D4\"},children:\"  User Login\"})}),\"\\n\",l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#808080\"},children:\"</\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"AnimatedButton\"}),n(r.span,{style:{color:\"#808080\"},children:\">\"})]})]})})}),\"\\n\",n(r.h2,{id:\"examples\",children:\"Examples\"}),\"\\n\",n(r.h3,{id:\"with-loading-state\",children:\"With Loading State\"}),\"\\n\",l(r.p,{children:[\"You can show a loading state by passing the \",n(r.code,{children:\"isLoading\"}),\" prop. By default, the loading state is false.\"]}),\"\\n\",n(\"br\",{}),\"\\n\",n(r.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(r.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:n(r.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#808080\"},children:\"<\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"AnimatedButton\"}),n(r.span,{style:{color:\"#9CDCFE\"},children:\" isLoading\"}),n(r.span,{style:{color:\"#808080\"},children:\">\"}),n(r.span,{style:{color:\"#D4D4D4\"},children:\"Button Text\"}),n(r.span,{style:{color:\"#808080\"},children:\"</\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"AnimatedButton\"}),n(r.span,{style:{color:\"#808080\"},children:\">\"})]})})})}),\"\\n\",n(r.h3,{id:\"disabling-click-effect\",children:\"Disabling Click Effect\"}),\"\\n\",l(r.p,{children:[\"You can disable the click effect by passing the \",n(r.code,{children:\"showClickEffect\"}),\" prop. By default, the click effect is enabled.\"]}),\"\\n\",n(\"br\",{}),\"\\n\",n(r.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(r.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:n(r.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#808080\"},children:\"<\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"AnimatedButton\"}),n(r.span,{style:{color:\"#9CDCFE\"},children:\" showClickEffect\"}),n(r.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(r.span,{style:{color:\"#569CD6\"},children:\"{false}\"}),n(r.span,{style:{color:\"#808080\"},children:\">\"}),n(r.span,{style:{color:\"#D4D4D4\"},children:\"Button Text\"}),n(r.span,{style:{color:\"#808080\"},children:\"</\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"AnimatedButton\"}),n(r.span,{style:{color:\"#808080\"},children:\">\"})]})})})}),\"\\n\",n(r.h3,{id:\"adding-icon\",children:\"Adding Icon\"}),\"\\n\",l(r.p,{children:[\"You can add an icon to the button by passing the \",n(r.code,{children:\"startContent\"}),\" or \",n(r.code,{children:\"endContent\"}),\" prop. By default, the icon is null.\"]}),\"\\n\",n(\"br\",{}),\"\\n\",n(r.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(r.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:l(r.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:[l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#808080\"},children:\"<\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"AnimatedButton\"})]}),\"\\n\",l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#9CDCFE\"},children:\"  startContent\"}),n(r.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(r.span,{style:{color:\"#569CD6\"},children:\"{\"}),n(r.span,{style:{color:\"#808080\"},children:\"<\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"LogInIcon\"}),n(r.span,{style:{color:\"#9CDCFE\"},children:\" className\"}),n(r.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(r.span,{style:{color:\"#CE9178\"},children:'\"size-4 mr-2\"'}),n(r.span,{style:{color:\"#808080\"},children:\" />\"}),n(r.span,{style:{color:\"#569CD6\"},children:\"}\"})]}),\"\\n\",n(r.span,{\"data-line\":\"\",children:n(r.span,{style:{color:\"#808080\"},children:\">\"})}),\"\\n\",n(r.span,{\"data-line\":\"\",children:n(r.span,{style:{color:\"#D4D4D4\"},children:\"  User Login\"})}),\"\\n\",l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#808080\"},children:\"</\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"AnimatedButton\"}),n(r.span,{style:{color:\"#808080\"},children:\">\"})]})]})})}),\"\\n\",n(r.h3,{id:\"and-all-shadcn-button-props\",children:\"And All Shadcn Button Props\"}),\"\\n\",l(r.p,{children:[\"You can pass all the props of the \",n(r.code,{children:\"Button\"}),\" component from Shadcn to the \",n(r.code,{children:\"AnimatedButton\"}),\" component.\"]}),\"\\n\",n(\"br\",{}),\"\\n\",n(r.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(r.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:l(r.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:[l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#808080\"},children:\"<\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"AnimatedButton\"})]}),\"\\n\",l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#9CDCFE\"},children:\"  variant\"}),n(r.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(r.span,{style:{color:\"#CE9178\"},children:'\"desctructive\"'})]}),\"\\n\",l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#9CDCFE\"},children:\"  size\"}),n(r.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(r.span,{style:{color:\"#CE9178\"},children:'\"lg\"'})]}),\"\\n\",n(r.span,{\"data-line\":\"\",children:n(r.span,{style:{color:\"#808080\"},children:\">\"})}),\"\\n\",n(r.span,{\"data-line\":\"\",children:n(r.span,{style:{color:\"#D4D4D4\"},children:\"  User Login\"})}),\"\\n\",l(r.span,{\"data-line\":\"\",children:[n(r.span,{style:{color:\"#808080\"},children:\"</\"}),n(r.span,{style:{color:\"#4EC9B0\"},children:\"AnimatedButton\"}),n(r.span,{style:{color:\"#808080\"},children:\">\"})]})]})})})]})}return{default:function(e={}){const{wrapper:l}=e.components||{};return l?n(l,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};function _missingMdxReference(e,n){throw new Error(\"Expected \"+(n?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}",
+    "permalink": "/docs/animated-button"
+  },
+  {
     "title": "Hint",
     "description": "A popup tooltip that appears when you hover over an element.",
     "published": true,

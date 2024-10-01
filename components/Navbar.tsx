@@ -18,7 +18,7 @@ export function Navbar() {
       </Link>
       <nav className="flex items-center gap-4 text-sm lg:gap-6">
         <Link
-          href="/docs"
+          href="/docs/sidebar-02"
           className={cn(
             "transition-colors hover:text-foreground/80",
             pathname === "/docs" ? "text-foreground" : "text-foreground/60"
@@ -27,7 +27,7 @@ export function Navbar() {
           Docs
         </Link>
         <Link
-          href="/docs/components"
+          href="/docs/hint"
           className={cn(
             "transition-colors hover:text-foreground/80",
             pathname?.startsWith("/docs/components") &&
@@ -39,7 +39,7 @@ export function Navbar() {
           Components
         </Link>
         <Link
-          href="/blocks"
+          href="/docs/sidebar-01"
           className={cn(
             "transition-colors hover:text-foreground/80",
             pathname?.startsWith("/blocks")

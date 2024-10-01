@@ -36,6 +36,11 @@ export const docsConfig: DocsConfig = {
           href: "/docs/hint",
           items: [],
         },
+        {
+          title: "Animated Button",
+          href: "/docs/animated-button",
+          items: [],
+        },
       ],
     },
   ],

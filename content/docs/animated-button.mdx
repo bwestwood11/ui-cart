@@ -1,0 +1,95 @@
+---
+title: "Animated Button"
+description: "A button with a ripple effect that animates when clicked."
+published: true
+links:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about"
+slug: "animated-button"
+---
+
+## Installation
+
+<ComponentPreview name="animated-button" />
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add https://www.uicart.io/registry/animated-button.json
+```
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import AnimatedButton from "@/components/ui/animated-button";
+```
+
+<br />
+```tsx
+<AnimatedButton
+  startContent={<LogInIcon className="size-4 mr-2" />}
+>
+  User Login
+</AnimatedButton>
+```
+
+## Examples
+
+### With Loading State
+
+You can show a loading state by passing the `isLoading` prop. By default, the loading state is false.
+
+<br />
+```tsx
+<AnimatedButton isLoading>Button Text</AnimatedButton>
+```
+
+### Disabling Click Effect
+
+You can disable the click effect by passing the `showClickEffect` prop. By default, the click effect is enabled.
+
+<br />
+```tsx
+<AnimatedButton showClickEffect={false}>Button Text</AnimatedButton>
+```
+
+### Adding Icon
+
+You can add an icon to the button by passing the `startContent` or `endContent` prop. By default, the icon is null.
+
+<br />
+
+```tsx
+<AnimatedButton
+  startContent={<LogInIcon className="size-4 mr-2" />}
+>
+  User Login
+</AnimatedButton>
+```
+
+### And All Shadcn Button Props
+
+You can pass all the props of the `Button` component from Shadcn to the `AnimatedButton` component.
+
+<br />
+```tsx
+<AnimatedButton
+  variant="desctructive"
+  size="lg"
+>
+  User Login
+</AnimatedButton>
+```
+
