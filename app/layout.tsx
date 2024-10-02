@@ -41,15 +41,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
       >
         <div className="relative flex min-h-screen flex-col">
-          <header className="fixed top-0 z-50 h-14 w-full border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-            <div className="px-7 flex h-14 max-w-screen-2xl items-center">
+          <header className="fixed top-0 z-50 h-14 w-full border-border/40 bg-background/20 backdrop-blur-xl">
+            <div className="px-7 flex h-14 max-w-screen-2xl items-center mx-auto">
               <Navbar />
               <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
                 <div className="w-full flex-1 md:w-auto md:flex-none">
                   <CommandMenu />
                 </div>
                 <nav className="flex items-center">
-                  <Link href={"/"} target="_blank" rel="noreferrer">
+                  <Link href={"https://github.com/bwestwood11/ui-cart"} target="_blank" rel="noreferrer">
                     <div
                       className={cn(
                         buttonVariants({
@@ -62,7 +62,7 @@ export default function RootLayout({
                       <span className="sr-only">GitHub</span>
                     </div>
                   </Link>
-                  <Link href={"/"} target="_blank" rel="noreferrer">
+                  <Link href={"https://x.com/brett__westwood"} target="_blank" rel="noreferrer">
                     <div
                       className={cn(
                         buttonVariants({
@@ -79,7 +79,7 @@ export default function RootLayout({
               </div>
             </div>
           </header>
-          <div className="pt-14">{children}</div>
+          <div>{children}</div>
         </div>
       </body>
     </html>

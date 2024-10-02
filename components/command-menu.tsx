@@ -6,11 +6,7 @@ import { type DialogProps } from "@radix-ui/react-dialog"
 import {
   CircleIcon,
   FileIcon,
-  LaptopIcon,
-  MoonIcon,
-  SunIcon,
 } from "@radix-ui/react-icons"
-import { useTheme } from "next-themes"
 
 import { docsConfig } from "@/config/DocsConfig"
 import { cn } from "@/lib/utils"
@@ -28,7 +24,7 @@ import {
 export function CommandMenu({ ...props }: DialogProps) {
   const router = useRouter()
   const [open, setOpen] = React.useState(false)
-  const { setTheme } = useTheme()
+  // const { setTheme } = useTheme()
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -111,7 +107,7 @@ export function CommandMenu({ ...props }: DialogProps) {
             </CommandGroup>
           ))}
           <CommandSeparator />
-          <CommandGroup heading="Theme">
+          {/* <CommandGroup heading="Theme">
             <CommandItem onSelect={() => runCommand(() => setTheme("light"))}>
               <SunIcon className="mr-2 h-4 w-4" />
               Light
@@ -124,7 +120,7 @@ export function CommandMenu({ ...props }: DialogProps) {
               <LaptopIcon className="mr-2 h-4 w-4" />
               System
             </CommandItem>
-          </CommandGroup>
+          </CommandGroup> */}
         </CommandList>
       </CommandDialog>
     </>

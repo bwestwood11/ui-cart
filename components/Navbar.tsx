@@ -1,22 +1,17 @@
 "use client"
 
 import Link from "next/link"
-import { usePathname } from "next/navigation"
-
-import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 export function Navbar() {
-  const pathname = usePathname()
-
   return (
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-4 flex items-center space-x-2 lg:mr-6">
         {/* <Icons.logo className="h-6 w-6" /> */}
-        <span className="hidden font-bold lg:inline-block">
-          Website
-        </span>
+        <Image src="/logo.svg" alt="logo" width={32} height={16} />
+        <span className="text-lg font-bold">UI Cart</span>
       </Link>
-      <nav className="flex items-center gap-4 text-sm lg:gap-6">
+      {/* <nav className="flex items-center gap-4 text-sm lg:gap-6">
         <Link
           href="/docs/sidebar-02"
           className={cn(
@@ -50,7 +45,7 @@ export function Navbar() {
           Blocks
         </Link>
         
-      </nav>
+      </nav> */}
     </div>
   )
 }
