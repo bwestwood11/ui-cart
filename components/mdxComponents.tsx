@@ -189,7 +189,7 @@ const sharedComponents = {
     };
     return (
       <div className="relative">
-        <pre className={cn(className)} {...props} />
+        <pre className={cn(className, 'text-wrap')} {...props} />
         <button
           onClick={onCopy}
           className="absolute top-3 right-3 text-white hover:text-white/70"
