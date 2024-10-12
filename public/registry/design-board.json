@@ -1,0 +1,41 @@
+{
+  "name": "design-board",
+  "type": "registry:block",
+  "dependencies": [
+    "framer-motion",
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "type": "registry:block",
+      "content": "\"use client\";\r\n\r\nimport { GripVertical, Plus } from \"lucide-react\";\r\nimport React from \"react\";\r\nimport { motion } from \"framer-motion\";\r\n\r\nconst DesignBoard = () => {\r\n  return (\r\n    <div className=\"@container w-full h-full bg-green-500/80\">\r\n      <div className=\"relative h-full w-full flex flex-col @md:flex-row overflow-hidden\">\r\n        <div className=\"flex flex-col gap-3 py-6\">\r\n          <motion.div\r\n            drag\r\n            dragConstraints={{\r\n              top: 125,\r\n              right: 125,\r\n              bottom: 125,\r\n              left: -125,\r\n            }}\r\n            className=\"flex relative w-fit gap-1 items-center border border-white/20 rounded-md p-2 bg-white/10 z-10\"\r\n          >\r\n            <svg\r\n              stroke=\"currentColor\"\r\n              fill=\"currentColor\"\r\n              stroke-width=\"0\"\r\n              viewBox=\"0 0 256 256\"\r\n              className=\"size-5 text-white absolute bottom-[85%] fill-white\"\r\n              height=\"1em\"\r\n              width=\"1em\"\r\n              xmlns=\"http://www.w3.org/2000/svg\"\r\n            >\r\n              <path d=\"M216,104v48a88,88,0,0,1-176,0V136a16,16,0,0,1,32,0v8a8,8,0,0,0,16,0V88a16,16,0,0,1,32,0v16a8,8,0,0,0,16,0V88a16,16,0,0,1,32,0v16a8,8,0,0,0,16,0,16,16,0,0,1,32,0Z\"></path>\r\n            </svg>\r\n            <GripVertical className=\"size-4 text-white fill-white \" />\r\n            <p className=\"text-sm\">Shape of You by Ed Sheeran</p>\r\n          </motion.div>\r\n          <motion.div\r\n            drag\r\n            dragConstraints={{\r\n              top: 125,\r\n              right: 125,\r\n              bottom: 125,\r\n              left: -125,\r\n            }}\r\n            className=\"flex w-fit gap-1 items-center border border-white/20 rounded-md p-2 bg-white/10 z-10\"\r\n          >\r\n            <GripVertical className=\"size-4 text-white\" />\r\n            <p className=\"text-sm\">Controlla by Drake</p>\r\n          </motion.div>\r\n        </div>\r\n        <div className=\"border border-white/20 rounded-md p-2 bg-white/10 flex-1 flex flex-col gap-2 px-4\">\r\n          <div className=\"flex justify-between items-center \">\r\n            <p>Music</p>\r\n            <Plus className=\"size-5 text-white\" />\r\n          </div>\r\n          <div className=\"bg-white/30 w-full flex-1 rounded-md animate-pulse\" />\r\n          <div className=\"bg-white/30 w-full flex-1 rounded-md p-2 animate-pulse\">\r\n            <div className=\"w-[40px] h-2 bg-white/40 rounded-md\"></div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default DesignBoard;\r\n",
+      "path": "block/bento-grid-components/design-board.tsx",
+      "target": "components/block/bento-grid-components/design-board.tsx"
+    }
+  ],
+  "tailwind": {
+    "config": {
+      "plugins": [
+        {
+          "config": {
+            "theme": {
+              "containers": {
+                "xs": "20rem",
+                "sm": "24rem",
+                "md": "28rem",
+                "lg": "32rem",
+                "xl": "36rem",
+                "2xl": "42rem",
+                "3xl": "48rem",
+                "4xl": "56rem",
+                "5xl": "64rem",
+                "6xl": "72rem",
+                "7xl": "80rem"
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -64,4 +64,30 @@ export const ui: Registry = [
     dependencies: ["framer-motion", "lucide-react"],
     files: ["block/sidebar-02/sidebar-02.tsx"],
   },
+  {
+    name: "sonic-bento",
+    type: "registry:block",
+    dependencies: ["framer-motion", "lucide-react"],
+    files: ["block/bento-grid-components/sonic-bento.tsx"],
+  },
+  {
+    name: "design-board",
+    type: "registry:block",
+    dependencies: ["framer-motion", "lucide-react"],
+    files: ["block/bento-grid-components/design-board.tsx"],
+    tailwind: {
+      config: {
+        plugins: [require("@tailwindcss/container-queries")],
+      },
+    },
+  },
+  {
+    name: "bento-grid-01",
+    type: "registry:block",
+    registryDependencies: [
+      "https://www.uicart.io/registry/sonic-bento.json",
+      "https://www.uicart.io/registry/design-board.json",
+    ],
+    files: ["block/bento-grid-01/bento-grid.tsx"],
+  },
 ];
