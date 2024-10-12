@@ -73,11 +73,15 @@ export const ui: Registry = [
   {
     name: "design-board",
     type: "registry:block",
-    dependencies: ["framer-motion", "lucide-react"],
+    dependencies: [
+      "framer-motion",
+      "lucide-react",
+      "@tailwindcss/container-queries",
+    ],
     files: ["block/bento-grid-components/design-board.tsx"],
     tailwind: {
       config: {
-        plugins: ["@tailwindcss/container-queries"],
+        plugins: [`require("@tailwindcss/container-queries")`],
       },
     },
   },
