@@ -3,7 +3,8 @@
   "type": "registry:block",
   "dependencies": [
     "framer-motion",
-    "lucide-react"
+    "lucide-react",
+    "@tailwindcss/container-queries"
   ],
   "files": [
     {
@@ -16,7 +17,7 @@
   "tailwind": {
     "config": {
       "plugins": [
-        "@tailwindcss/container-queries"
+        "require(\"@tailwindcss/container-queries\")"
       ]
     }
   }
