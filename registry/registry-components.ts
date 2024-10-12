@@ -77,7 +77,7 @@ export const ui: Registry = [
     files: ["block/bento-grid-components/design-board.tsx"],
     tailwind: {
       config: {
-        plugins: [require("@tailwindcss/container-queries")],
+        plugins: ["@tailwindcss/container-queries"],
       },
     },
   },
