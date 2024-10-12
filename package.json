@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"next dev\" \"velite --watch\"",
-    "build": "next build && velite",
+    "build": "next build && velite && registry:build",
     "start": "next start",
     "lint": "next lint",
     "registry:build": "tsx ./scripts/build-registry.ts",
