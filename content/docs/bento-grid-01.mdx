@@ -1,0 +1,49 @@
+---
+title: "Bento Grid"
+description: "Bento grid design for showcasing features. Customizee each Bento Card to your liking or use the default design that wee provide."
+published: true
+links:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about"
+slug: "bento-grid-01"
+---
+
+## Installation
+
+<ComponentPreview name="bento-grid-01" shouldExpand={true} />
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add https://www.uicart.io/registry/bento-grid-01.json
+```
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import BentoGrid from "@/components/block/bento-grid-01/bento-grid.tsx";
+```
+
+<br />
+```tsx
+    <div className="space-y-10">
+      <div className="mx-auto max-w-xl text-center">
+        <h2 className="font-display text-4xl font-extrabold leading-[1.15] [text-wrap:balance] sm:leading-[1.15]">
+          Bento Grid To Display Your Content
+        </h2>
+      </div>
+      <BentoGrid />
+    </div>
+```

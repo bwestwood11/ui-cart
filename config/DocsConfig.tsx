@@ -29,6 +29,31 @@ export const docsConfig: DocsConfig = {
       ],
     },
     {
+      title: "Bento Grid",
+      items: [
+        {
+          title: "Music Bento Grid",
+          href: "/docs/bento-grid-01",
+          items: [],
+        },
+      ]
+    },
+    {
+      title: "Bento Grid Cards",
+      items: [
+        {
+          title: "Sonic Bento Card",
+          href: "/docs/sonic-bento-card",
+          items: [],
+        },
+        {
+          title: "Animated Design Board",
+          href: "/docs/animated-design-board-bento-card",
+          items: [],
+        },
+      ]
+    },
+    {
       title: "Components",
       items: [
         {

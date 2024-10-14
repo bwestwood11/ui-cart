@@ -11,7 +11,7 @@ const Sidebar1 = () => {
       onMouseEnter={() => setIsMinimized(false)}
       onMouseLeave={() => setIsMinimized(true)}
       className={cn(
-        "flex flex-col w-fit gap-4 border p-3 rounded-lg bg-stone-100 dark:bg-stone-900 h-svh transition-all duration-300 sticky top-0 z-10",
+        "flex flex-col w-fit gap-4 border p-3 rounded-lg bg-stone-100 dark:bg-stone-900 h-[700px] transition-all duration-300 sticky top-0 z-10",
         isMinimized ? "w-[75px]" : "w-[300px]"
       )}
     >

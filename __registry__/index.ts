@@ -66,6 +66,64 @@ export const components = {
       () => import("./preview/blocks/sidebar-02/sidebar-02")
     ),
   },
+  "bento-grid-01": {
+    name: "bento-grid-01",
+    type: "registry:block",
+    registryDependencies: [
+      "https://www.uicart.io/registry/sonic-bento.json",
+      "https://www.uicart.io/registry/design-board.json",
+    ],
+    dependencies: ["framer-motion", "lucide-react"],
+    files: [
+      {
+        type: "registry:block",
+        content:
+          '"use client";\r\n\r\nimport { cn } from "@/lib/utils";\r\nimport { motion } from "framer-motion";\r\nimport Image from "next/image";\r\nimport SonicBento from "../bento-grid-components/sonic-bento";\r\nimport DesignBoard from "../bento-grid-components/design-board";\r\n\r\n\r\nconst BentoGrid = () => {\r\n  return (\r\n    <div className="grid grid-cols-1 lg:grid-cols-6 lg:grid-rows-2 gap-4">\r\n      <BentoCard\r\n        eyebrow="Audio Analysis"\r\n        title="Get perfect clarity"\r\n        description="Our AI-powered audio analysis will help you understand your customers better than they understand themselves."\r\n        graphic={<SonicBento />}\r\n        fade={["bottom"]}\r\n        className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"\r\n      />\r\n      <BentoCard\r\n        eyebrow="Kanban"\r\n        title="Interactive Board"\r\n        description="Our interactive kanban board will help you keep track of your music projects."\r\n        graphic={<DesignBoard />}\r\n        fade={["bottom"]}\r\n        className="lg:col-span-3 lg:rounded-tr-4xl"\r\n      />\r\n      <BentoCard\r\n        eyebrow="Speed"\r\n        title="Built for performance"\r\n        description="Access your music library in seconds with our high-speed servers."\r\n        fade={["bottom"]}\r\n        graphic={\r\n          <Image\r\n            src="/screenshots/music-dashboard.jpg"\r\n            width={1200}\r\n            height={1200}\r\n            alt="dashboard image"\r\n            className="object-cover w-full h-full"\r\n          />\r\n        }\r\n        className="lg:col-span-2 lg:rounded-bl-4xl"\r\n      />\r\n      <BentoCard\r\n        eyebrow="Source"\r\n        title="Receive the latest music"\r\n        description="Our music source is updated daily with the latest tracks from your favorite artists."\r\n        graphic={\r\n          <Image\r\n            src="/screenshots/spotify.png"\r\n            width={1200}\r\n            height={1200}\r\n            alt="dashboard image"\r\n            className="object-cover w-full h-full"\r\n          />\r\n        }\r\n        className="lg:col-span-2"\r\n        fade={["bottom"]}\r\n      />\r\n      <BentoCard\r\n        eyebrow="Components"\r\n        title="Shadcn"\r\n        description="Use the Shadcn CLI to use custom components in your projects."\r\n        graphic={\r\n          <Image\r\n            src="/screenshots/shadcn.jpg"\r\n            width={1200}\r\n            height={1200}\r\n            alt="dashboard image"\r\n            className="object-cover w-full h-full"\r\n          />\r\n        }\r\n        className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"\r\n        fade={["bottom"]}\r\n      />\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default BentoGrid;\r\n\r\nconst BentoCard = ({\r\n  dark = false,\r\n  className = "",\r\n  eyebrow,\r\n  title,\r\n  description,\r\n  graphic,\r\n  fade = [],\r\n}: {\r\n  dark?: boolean;\r\n  className?: string;\r\n  eyebrow: React.ReactNode;\r\n  title: React.ReactNode;\r\n  description: React.ReactNode;\r\n  graphic: React.ReactNode;\r\n  fade?: ("top" | "bottom")[];\r\n}) => {\r\n  return (\r\n    <motion.div\r\n      initial="idle"\r\n      whileHover="active"\r\n      variants={{ idle: {}, active: {} }}\r\n      data-dark={dark ? "true" : undefined}\r\n      className={cn(\r\n        className,\r\n        "group relative flex flex-col overflow-hidden rounded-lg",\r\n        "bg-card shadow-sm ring-1 ring-black/5 border-white/20 border shadow-white/10",\r\n        ""\r\n      )}\r\n    >\r\n      <div className="relative h-80 shrink-0">\r\n        {graphic}\r\n        {fade.includes("top") && (\r\n          <div className="absolute inset-0 bg-gradient-to-b from-card to-0%" />\r\n        )}\r\n        {fade.includes("bottom") && (\r\n          <div className="absolute inset-0 bg-gradient-to-t from-card to-50% " />\r\n        )}\r\n      </div>\r\n      <div className="relative p-10">\r\n        <h3>{eyebrow}</h3>\r\n        <p className="mt-1 text-2xl/8 font-medium tracking-tight text-foreground group-data-[dark]:text-white">\r\n          {title}\r\n        </p>\r\n        <p className="mt-2 max-w-[600px] text-sm/6 text-foreground/80 group-data-[dark]:text-gray-400">\r\n          {description}\r\n        </p>\r\n      </div>\r\n    </motion.div>\r\n  );\r\n};\r\n',
+        path: "block/bento-grid-01/bento-grid.tsx",
+        target: "components/block/bento-grid-01/bento-grid.tsx",
+      },
+    ],
+    component: React.lazy(
+      () => import("./preview/blocks/bento-grid-01/bento-grid-01")
+    ),
+  },
+  "sonic-bento-card": {
+    name: "sonic-bento-card",
+    type: "registry:block",
+    dependencies: ["framer-motion", "lucide-react"],
+    files: [
+      {
+        type: "registry:block",
+        content:
+          '"use client";\r\n\r\nimport { cn } from "@/lib/utils";\r\nimport { motion } from "framer-motion";\r\nimport { Mic } from "lucide-react";\r\nimport { useState, useEffect } from "react";\r\n\r\ntype Props = {\r\n    wrapperClassName?: string;\r\n    audioWaveCount?: number;\r\n    bottomGradientClassName?: string;\r\n}\r\nconst SonicBento = ({wrapperClassName, audioWaveCount = 40, bottomGradientClassName}: Props) => {\r\n  return (\r\n    <div className={cn("relative w-full h-full overflow-hidden bg-green-500", wrapperClassName)}>\r\n      <AudioWaves numberOfLines={audioWaveCount} />\r\n      <Circles bottomGradientClassName={bottomGradientClassName} />\r\n      <div className="absolute left-1/2 h-full w-[26rem] -translate-x-1/2">\r\n        <MainLogo />\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default SonicBento;\r\n\r\nfunction Circles({bottomGradientClassName}: {bottomGradientClassName?: string}) {\r\n  return (\r\n    <div className="absolute inset-0">\r\n      <Circle size={528} opacity="3%" delay={0.45} />\r\n      <Circle size={400} opacity="5%" delay={0.3} />\r\n      <Circle size={272} opacity="5%" delay={0.15} />\r\n      <Circle size={144} opacity="10%" delay={0} isBlurred={true} />\r\n      {/* <div className={cn("absolute inset-0 bg-gradient-to-t from-white to-35%", bottomGradientClassName)} /> */}\r\n    </div>\r\n  );\r\n}\r\n\r\nfunction Circle({\r\n  size,\r\n  delay,\r\n  opacity,\r\n  isBlurred = false\r\n}: {\r\n  size: number;\r\n  delay: number;\r\n  opacity: string;\r\n  isBlurred?: boolean;\r\n}) {\r\n  return (\r\n    <motion.div\r\n      variants={{\r\n        idle: { width: `${size}px`, height: `${size}px` },\r\n        active: {\r\n          width: [`${size}px`, `${size + 10}px`, `${size}px`],\r\n          height: [`${size}px`, `${size + 10}px`, `${size}px`],\r\n          transition: {\r\n            duration: 0.75,\r\n            repeat: Infinity,\r\n            repeatDelay: 1.25,\r\n            ease: "easeInOut",\r\n            delay,\r\n          },\r\n        },\r\n      }}\r\n      initial="idle"\r\n      animate="active"\r\n      style={{ "--opacity": opacity } as React.CSSProperties}\r\n      className={cn(\r\n        "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full",\r\n        "bg-white bg-opacity-[var(--opacity)]",\r\n        isBlurred && "backdrop-blur-[2px]",\r\n         \r\n        // "bg-[radial-gradient(circle,transparent_25%,color-mix(in_srgb,_theme(colors.green.800)_var(--opacity),transparent)_100%)]",\r\n        "ring-1 ring-inset ring-green-800/[8%]"\r\n      )}\r\n    />\r\n  );\r\n}\r\n\r\nfunction MainLogo() {\r\n  return (\r\n    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex size-16 items-center justify-center rounded-full bg-white/20 backdrop-blur-xl">\r\n      <Mic className="size-8 text-white" />\r\n    </div>\r\n  );\r\n}\r\n\r\nfunction AudioWaves({numberOfLines}: {numberOfLines: number}) {\r\n  const [waves, setWaves] = useState<number[]>([]);\r\n  useEffect(() => {\r\n    const waveCount = numberOfLines // Number of lines\r\n    const newWaves = [];\r\n\r\n    for (let i = 0; i < waveCount; i++) {\r\n      const randomHeight = Math.random() * 100 + 10; // Random height between 10 and 110\r\n      newWaves.push(randomHeight);\r\n    }\r\n\r\n    setWaves(newWaves);\r\n  }, [numberOfLines]);\r\n\r\n  return (\r\n    <div className="w-full absolute inset-0 flex justify-between items-center">\r\n      {waves.map((height, index) => (\r\n        <motion.div\r\n        initial={{ height: "0px"}}\r\n        animate={{ height: [height, height + 10, height] }}\r\n        transition={{ duration: 0.75, repeat: Infinity, repeatDelay: 1.25, ease: "easeInOut", delay: index * 0.05 }}\r\n          key={index}\r\n          className="w-[3px] bg-white/50"\r\n          style={{ height: `${height}px` }}\r\n        />\r\n      ))}\r\n    </div>\r\n  );\r\n}\r\n',
+        path: "block/bento-grid-components/sonic-bento.tsx",
+        target: "components/block/bento-grid-components/sonic-bento.tsx",
+      },
+    ],
+    component: React.lazy(
+      () => import("./preview/blocks/bento-grid-cards/sonic-bento-card")
+    ),
+  },
+  "animated-design-board-bento-card": {
+    name: "animated-design-board-bento-card",
+    type: "registry:block",
+    dependencies: ["framer-motion", "lucide-react"],
+    files: [
+      {
+        type: "registry:block",
+        content:
+          '"use client";\r\n\r\nimport { GripVertical, Plus } from "lucide-react";\r\nimport React from "react";\r\nimport { motion } from "framer-motion";\r\n\r\nconst DesignBoard = () => {\r\n  return (\r\n    <div className="@container w-full h-full bg-green-500/80">\r\n      <div className="relative h-full w-full flex flex-col @md:flex-row overflow-hidden">\r\n        <div className="flex flex-col gap-3 py-6">\r\n          <motion.div\r\n            drag\r\n            dragConstraints={{\r\n              top: 125,\r\n              right: 125,\r\n              bottom: 125,\r\n              left: -125,\r\n            }}\r\n            className="flex relative w-fit gap-1 items-center border border-white/20 rounded-md p-2 bg-white/10 z-10"\r\n          >\r\n            <svg\r\n              stroke="currentColor"\r\n              fill="currentColor"\r\n              stroke-width="0"\r\n              viewBox="0 0 256 256"\r\n              className="size-5 text-white absolute bottom-[85%] fill-white"\r\n              height="1em"\r\n              width="1em"\r\n              xmlns="http://www.w3.org/2000/svg"\r\n            >\r\n              <path d="M216,104v48a88,88,0,0,1-176,0V136a16,16,0,0,1,32,0v8a8,8,0,0,0,16,0V88a16,16,0,0,1,32,0v16a8,8,0,0,0,16,0V88a16,16,0,0,1,32,0v16a8,8,0,0,0,16,0,16,16,0,0,1,32,0Z"></path>\r\n            </svg>\r\n            <GripVertical className="size-4 text-white fill-white " />\r\n            <p className="text-sm">Shape of You by Ed Sheeran</p>\r\n          </motion.div>\r\n          <motion.div\r\n            drag\r\n            dragConstraints={{\r\n              top: 125,\r\n              right: 125,\r\n              bottom: 125,\r\n              left: -125,\r\n            }}\r\n            className="flex w-fit gap-1 items-center border border-white/20 rounded-md p-2 bg-white/10 z-10"\r\n          >\r\n            <GripVertical className="size-4 text-white" />\r\n            <p className="text-sm">Controlla by Drake</p>\r\n          </motion.div>\r\n        </div>\r\n        <div className="border border-white/20 rounded-md p-2 bg-white/10 flex-1 flex flex-col gap-2 px-4">\r\n          <div className="flex justify-between items-center ">\r\n            <p>Music</p>\r\n            <Plus className="size-5 text-white" />\r\n          </div>\r\n          <div className="bg-white/30 w-full flex-1 rounded-md animate-pulse" />\r\n          <div className="bg-white/30 w-full flex-1 rounded-md p-2 animate-pulse">\r\n            <div className="w-[40px] h-2 bg-white/40 rounded-md"></div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default DesignBoard;\r\n',
+        path: "block/bento-grid-components/design-board.tsx",
+        target: "components/block/bento-grid-components/design-board.tsx",
+      },
+    ],
+    component: React.lazy(
+      () =>
+        import(
+          "./preview/blocks/bento-grid-cards/animated-design-board-bento-card"
+        )
+    ),
+  },
   hint: {
     name: "hint",
     type: "registry:ui",

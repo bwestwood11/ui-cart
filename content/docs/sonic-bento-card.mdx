@@ -1,0 +1,50 @@
+---
+title: "Sonic Bento Card"
+description: "A Bento Card Component that requires our Bento Grid Component to work. This card is designed to showcase audio analysis features."
+published: true
+links:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about"
+slug: "sonic-bento-card"
+---
+
+## Installation
+
+<ComponentPreview name="sonic-bento-card" shouldExpand={true} />
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add https://www.uicart.io/registry/sonic-bento.json
+```
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import SonicBento from "@/components/block/bento-grid-components/sonic-bento.tsx";
+```
+
+<br />
+```tsx
+<BentoCard
+  eyebrow="Audio Analysis"
+  title="Get perfect clarity"
+  description="Our AI-powered audio analysis will help you understand your customers better than they understand themselves."
+  graphic={<SonicBento bottomGradientClassName="from-white" audioWaveCount={50} wrapperClassName="bg-green-500" />}
+  fade={["bottom"]}
+  className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
+/>
+```
+

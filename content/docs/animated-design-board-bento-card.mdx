@@ -1,0 +1,44 @@
+---
+title: "Animated Design Board Bento Card"
+description: "A Bento Card Component that requires our Bento Grid Component to work. This card allows users to drag the list card around."
+published: true
+links:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about"
+slug: "animated-design-board-bento-card"
+---
+
+## Installation
+
+<ComponentPreview name="animated-design-board-bento-card" shouldExpand={true} />
+
+<Tabs defaultValue="cli">
+
+<TabsList>
+  <TabsTrigger value="cli">CLI</TabsTrigger>
+</TabsList>
+
+<TabsContent value="cli">
+
+```bash
+npx shadcn@latest add https://www.uicart.io/registry/design-board.json
+```
+
+</TabsContent>
+
+</Tabs>
+
+## Usage
+
+```tsx
+import DesignBoard from "@/components/block/bento-grid-components/design-board.tsx";
+```
+
+<br />
+```tsx
+<div>
+  <DesignBoard />
+</div>
+```

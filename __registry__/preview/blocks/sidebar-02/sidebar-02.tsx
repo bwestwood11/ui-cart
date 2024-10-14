@@ -72,7 +72,7 @@ const Sidebar02 = () => {
   return (
     <motion.aside
       layout
-      className="sticky top-0 h-screen text-background shrink-0 border-r border-slate-300 bg-white p-2"
+      className="sticky top-0 h-[700px] text-background shrink-0 border-r border-slate-300 bg-white p-2"
       style={{ width: open ? "225px" : "fit-content" }}
     >
       <div className="flex flex-col gap-y-4 h-full">

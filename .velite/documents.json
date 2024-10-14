@@ -62,6 +62,78 @@
     "permalink": "/docs/animated-button"
   },
   {
+    "title": "Animated Design Board Bento Card",
+    "description": "A Bento Card Component that requires our Bento Grid Component to work. This card allows users to drag the list card around.",
+    "published": true,
+    "links": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "About",
+        "url": "/about"
+      }
+    ],
+    "featured": false,
+    "component": false,
+    "toc": [
+      {
+        "title": "Installation",
+        "url": "#installation",
+        "items": []
+      },
+      {
+        "title": "Usage",
+        "url": "#usage",
+        "items": []
+      }
+    ],
+    "slug": "animated-design-board-bento-card",
+    "metadata": {
+      "readingTime": 1,
+      "wordCount": 27
+    },
+    "content": "const{Fragment:e,jsx:n,jsxs:r}=arguments[0];function _createMdxContent(a){const l={code:\"code\",figure:\"figure\",h2:\"h2\",pre:\"pre\",span:\"span\",...a.components},{ComponentPreview:d,Tabs:t,TabsContent:s,TabsList:o,TabsTrigger:i}=l;return d||_missingMdxReference(\"ComponentPreview\",!0),t||_missingMdxReference(\"Tabs\",!0),s||_missingMdxReference(\"TabsContent\",!0),o||_missingMdxReference(\"TabsList\",!0),i||_missingMdxReference(\"TabsTrigger\",!0),r(e,{children:[n(l.h2,{id:\"installation\",children:\"Installation\"}),\"\\n\",n(d,{name:\"animated-design-board-bento-card\",shouldExpand:!0}),\"\\n\",r(t,{defaultValue:\"cli\",children:[n(o,{children:n(i,{value:\"cli\",children:\"CLI\"})}),n(s,{value:\"cli\",children:n(l.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(l.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",children:n(l.code,{\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:r(l.span,{\"data-line\":\"\",children:[n(l.span,{style:{color:\"#DCDCAA\"},children:\"npx\"}),n(l.span,{style:{color:\"#CE9178\"},children:\" shadcn@latest\"}),n(l.span,{style:{color:\"#CE9178\"},children:\" add\"}),n(l.span,{style:{color:\"#CE9178\"},children:\" https://www.uicart.io/registry/design-board.json\"})]})})})})})]}),\"\\n\",n(l.h2,{id:\"usage\",children:\"Usage\"}),\"\\n\",n(l.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(l.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:n(l.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:r(l.span,{\"data-line\":\"\",children:[n(l.span,{style:{color:\"#C586C0\"},children:\"import\"}),n(l.span,{style:{color:\"#9CDCFE\"},children:\" DesignBoard\"}),n(l.span,{style:{color:\"#C586C0\"},children:\" from\"}),n(l.span,{style:{color:\"#CE9178\"},children:' \"@/components/block/bento-grid-components/design-board.tsx\"'}),n(l.span,{style:{color:\"#D4D4D4\"},children:\";\"})]})})})}),\"\\n\",n(\"br\",{}),\"\\n\",n(l.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(l.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:r(l.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:[r(l.span,{\"data-line\":\"\",children:[n(l.span,{style:{color:\"#808080\"},children:\"<\"}),n(l.span,{style:{color:\"#569CD6\"},children:\"div\"}),n(l.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",r(l.span,{\"data-line\":\"\",children:[n(l.span,{style:{color:\"#808080\"},children:\"  <\"}),n(l.span,{style:{color:\"#4EC9B0\"},children:\"DesignBoard\"}),n(l.span,{style:{color:\"#808080\"},children:\" />\"})]}),\"\\n\",r(l.span,{\"data-line\":\"\",children:[n(l.span,{style:{color:\"#808080\"},children:\"</\"}),n(l.span,{style:{color:\"#569CD6\"},children:\"div\"}),n(l.span,{style:{color:\"#808080\"},children:\">\"})]})]})})})]})}return{default:function(e={}){const{wrapper:r}=e.components||{};return r?n(r,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};function _missingMdxReference(e,n){throw new Error(\"Expected \"+(n?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}",
+    "permalink": "/docs/animated-design-board-bento-card"
+  },
+  {
+    "title": "Bento Grid",
+    "description": "Bento grid design for showcasing features. Customizee each Bento Card to your liking or use the default design that wee provide.",
+    "published": true,
+    "links": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "About",
+        "url": "/about"
+      }
+    ],
+    "featured": false,
+    "component": false,
+    "toc": [
+      {
+        "title": "Installation",
+        "url": "#installation",
+        "items": []
+      },
+      {
+        "title": "Usage",
+        "url": "#usage",
+        "items": []
+      }
+    ],
+    "slug": "bento-grid-01",
+    "metadata": {
+      "readingTime": 1,
+      "wordCount": 32
+    },
+    "content": "const{Fragment:e,jsx:n,jsxs:l}=arguments[0];function _createMdxContent(r){const a={code:\"code\",figure:\"figure\",h2:\"h2\",pre:\"pre\",span:\"span\",...r.components},{ComponentPreview:s,Tabs:t,TabsContent:o,TabsList:d,TabsTrigger:c}=a;return s||_missingMdxReference(\"ComponentPreview\",!0),t||_missingMdxReference(\"Tabs\",!0),o||_missingMdxReference(\"TabsContent\",!0),d||_missingMdxReference(\"TabsList\",!0),c||_missingMdxReference(\"TabsTrigger\",!0),l(e,{children:[n(a.h2,{id:\"installation\",children:\"Installation\"}),\"\\n\",n(s,{name:\"bento-grid-01\",shouldExpand:!0}),\"\\n\",l(t,{defaultValue:\"cli\",children:[n(d,{children:n(c,{value:\"cli\",children:\"CLI\"})}),n(o,{value:\"cli\",children:n(a.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(a.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",children:n(a.code,{\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#DCDCAA\"},children:\"npx\"}),n(a.span,{style:{color:\"#CE9178\"},children:\" shadcn@latest\"}),n(a.span,{style:{color:\"#CE9178\"},children:\" add\"}),n(a.span,{style:{color:\"#CE9178\"},children:\" https://www.uicart.io/registry/bento-grid-01.json\"})]})})})})})]}),\"\\n\",n(a.h2,{id:\"usage\",children:\"Usage\"}),\"\\n\",n(a.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(a.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:n(a.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#C586C0\"},children:\"import\"}),n(a.span,{style:{color:\"#9CDCFE\"},children:\" BentoGrid\"}),n(a.span,{style:{color:\"#C586C0\"},children:\" from\"}),n(a.span,{style:{color:\"#CE9178\"},children:' \"@/components/block/bento-grid-01/bento-grid.tsx\"'}),n(a.span,{style:{color:\"#D4D4D4\"},children:\";\"})]})})})}),\"\\n\",n(\"br\",{}),\"\\n\",n(a.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(a.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:l(a.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:[l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"    <\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"div\"}),n(a.span,{style:{color:\"#9CDCFE\"},children:\" className\"}),n(a.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(a.span,{style:{color:\"#CE9178\"},children:'\"space-y-10\"'}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"      <\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"div\"}),n(a.span,{style:{color:\"#9CDCFE\"},children:\" className\"}),n(a.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(a.span,{style:{color:\"#CE9178\"},children:'\"mx-auto max-w-xl text-center\"'}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"        <\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"h2\"}),n(a.span,{style:{color:\"#9CDCFE\"},children:\" className\"}),n(a.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(a.span,{style:{color:\"#CE9178\"},children:'\"font-display text-4xl font-extrabold leading-[1.15] [text-wrap:balance] sm:leading-[1.15]\"'}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",n(a.span,{\"data-line\":\"\",children:n(a.span,{style:{color:\"#D4D4D4\"},children:\"          Bento Grid To Display Your Content\"})}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"        </\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"h2\"}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"      </\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"div\"}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"      <\"}),n(a.span,{style:{color:\"#4EC9B0\"},children:\"BentoGrid\"}),n(a.span,{style:{color:\"#808080\"},children:\" />\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"    </\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"div\"}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]})]})})})]})}return{default:function(e={}){const{wrapper:l}=e.components||{};return l?n(l,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};function _missingMdxReference(e,n){throw new Error(\"Expected \"+(n?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}",
+    "permalink": "/docs/bento-grid-01"
+  },
+  {
     "title": "Hint",
     "description": "A popup tooltip that appears when you hover over an element.",
     "published": true,
@@ -199,5 +271,41 @@
     },
     "content": "const{Fragment:e,jsx:n,jsxs:l}=arguments[0];function _createMdxContent(r){const a={code:\"code\",figure:\"figure\",h2:\"h2\",pre:\"pre\",span:\"span\",...r.components},{ComponentPreview:s,Tabs:t,TabsContent:c,TabsList:d,TabsTrigger:o}=a;return s||_missingMdxReference(\"ComponentPreview\",!0),t||_missingMdxReference(\"Tabs\",!0),c||_missingMdxReference(\"TabsContent\",!0),d||_missingMdxReference(\"TabsList\",!0),o||_missingMdxReference(\"TabsTrigger\",!0),l(e,{children:[n(a.h2,{id:\"installation\",children:\"Installation\"}),\"\\n\",n(s,{name:\"sidebar-02\",shouldExpand:!0}),\"\\n\",l(t,{defaultValue:\"cli\",children:[n(d,{children:n(o,{value:\"cli\",children:\"CLI\"})}),n(c,{value:\"cli\",children:n(a.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(a.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",children:n(a.code,{\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#DCDCAA\"},children:\"npx\"}),n(a.span,{style:{color:\"#CE9178\"},children:\" shadcn@latest\"}),n(a.span,{style:{color:\"#CE9178\"},children:\" add\"}),n(a.span,{style:{color:\"#CE9178\"},children:\" https://www.uicart.io/registry/sidebar-02.json\"})]})})})})})]}),\"\\n\",n(a.h2,{id:\"usage\",children:\"Usage\"}),\"\\n\",n(a.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(a.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:n(a.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#C586C0\"},children:\"import\"}),n(a.span,{style:{color:\"#9CDCFE\"},children:\" Sidebar02\"}),n(a.span,{style:{color:\"#C586C0\"},children:\" from\"}),n(a.span,{style:{color:\"#CE9178\"},children:' \"@/components/block/sidebar-02/sidebar-02\"'}),n(a.span,{style:{color:\"#D4D4D4\"},children:\";\"})]})})})}),\"\\n\",n(\"br\",{}),\"\\n\",n(a.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(a.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:l(a.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:[l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"<\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"div\"}),n(a.span,{style:{color:\"#9CDCFE\"},children:\" className\"}),n(a.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(a.span,{style:{color:\"#CE9178\"},children:'\"flex gap-2\"'}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"  <\"}),n(a.span,{style:{color:\"#4EC9B0\"},children:\"Sidebar02\"}),n(a.span,{style:{color:\"#808080\"},children:\" />\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"  <\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"main\"}),n(a.span,{style:{color:\"#9CDCFE\"},children:\" className\"}),n(a.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(a.span,{style:{color:\"#CE9178\"},children:'\"flex w-full justify-center text-5xl flex-col\"'}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#569CD6\"},children:\"    {\"}),n(a.span,{style:{color:\"#6A9955\"},children:\"/* your page content goes here */\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"}\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"  </\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"main\"}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]}),\"\\n\",l(a.span,{\"data-line\":\"\",children:[n(a.span,{style:{color:\"#808080\"},children:\"</\"}),n(a.span,{style:{color:\"#569CD6\"},children:\"div\"}),n(a.span,{style:{color:\"#808080\"},children:\">\"})]})]})})})]})}return{default:function(e={}){const{wrapper:l}=e.components||{};return l?n(l,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};function _missingMdxReference(e,n){throw new Error(\"Expected \"+(n?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}",
     "permalink": "/docs/sidebar-02"
+  },
+  {
+    "title": "Sonic Bento Card",
+    "description": "A Bento Card Component that requires our Bento Grid Component to work. This card is designed to showcase audio analysis features.",
+    "published": true,
+    "links": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "About",
+        "url": "/about"
+      }
+    ],
+    "featured": false,
+    "component": false,
+    "toc": [
+      {
+        "title": "Installation",
+        "url": "#installation",
+        "items": []
+      },
+      {
+        "title": "Usage",
+        "url": "#usage",
+        "items": []
+      }
+    ],
+    "slug": "sonic-bento-card",
+    "metadata": {
+      "readingTime": 1,
+      "wordCount": 42
+    },
+    "content": "const{Fragment:e,jsx:n,jsxs:l}=arguments[0];function _createMdxContent(r){const s={code:\"code\",figure:\"figure\",h2:\"h2\",pre:\"pre\",span:\"span\",...r.components},{ComponentPreview:a,Tabs:o,TabsContent:t,TabsList:c,TabsTrigger:d}=s;return a||_missingMdxReference(\"ComponentPreview\",!0),o||_missingMdxReference(\"Tabs\",!0),t||_missingMdxReference(\"TabsContent\",!0),c||_missingMdxReference(\"TabsList\",!0),d||_missingMdxReference(\"TabsTrigger\",!0),l(e,{children:[n(s.h2,{id:\"installation\",children:\"Installation\"}),\"\\n\",n(a,{name:\"sonic-bento-card\",shouldExpand:!0}),\"\\n\",l(o,{defaultValue:\"cli\",children:[n(c,{children:n(d,{value:\"cli\",children:\"CLI\"})}),n(t,{value:\"cli\",children:n(s.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(s.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",children:n(s.code,{\"data-language\":\"bash\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(s.span,{\"data-line\":\"\",children:[n(s.span,{style:{color:\"#DCDCAA\"},children:\"npx\"}),n(s.span,{style:{color:\"#CE9178\"},children:\" shadcn@latest\"}),n(s.span,{style:{color:\"#CE9178\"},children:\" add\"}),n(s.span,{style:{color:\"#CE9178\"},children:\" https://www.uicart.io/registry/sonic-bento.json\"})]})})})})})]}),\"\\n\",n(s.h2,{id:\"usage\",children:\"Usage\"}),\"\\n\",n(s.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(s.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:n(s.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:l(s.span,{\"data-line\":\"\",children:[n(s.span,{style:{color:\"#C586C0\"},children:\"import\"}),n(s.span,{style:{color:\"#9CDCFE\"},children:\" SonicBento\"}),n(s.span,{style:{color:\"#C586C0\"},children:\" from\"}),n(s.span,{style:{color:\"#CE9178\"},children:' \"@/components/block/bento-grid-components/sonic-bento.tsx\"'}),n(s.span,{style:{color:\"#D4D4D4\"},children:\";\"})]})})})}),\"\\n\",n(\"br\",{}),\"\\n\",n(s.figure,{\"data-rehype-pretty-code-figure\":\"\",children:n(s.pre,{style:{backgroundColor:\"#1E1E1E\",color:\"#D4D4D4\"},tabIndex:\"0\",\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",children:l(s.code,{\"data-language\":\"tsx\",\"data-theme\":\"dark-plus\",style:{display:\"grid\"},children:[l(s.span,{\"data-line\":\"\",children:[n(s.span,{style:{color:\"#808080\"},children:\"<\"}),n(s.span,{style:{color:\"#4EC9B0\"},children:\"BentoCard\"})]}),\"\\n\",l(s.span,{\"data-line\":\"\",children:[n(s.span,{style:{color:\"#9CDCFE\"},children:\"  eyebrow\"}),n(s.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(s.span,{style:{color:\"#CE9178\"},children:'\"Audio Analysis\"'})]}),\"\\n\",l(s.span,{\"data-line\":\"\",children:[n(s.span,{style:{color:\"#9CDCFE\"},children:\"  title\"}),n(s.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(s.span,{style:{color:\"#CE9178\"},children:'\"Get perfect clarity\"'})]}),\"\\n\",l(s.span,{\"data-line\":\"\",children:[n(s.span,{style:{color:\"#9CDCFE\"},children:\"  description\"}),n(s.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(s.span,{style:{color:\"#CE9178\"},children:'\"Our AI-powered audio analysis will help you understand your customers better than they understand themselves.\"'})]}),\"\\n\",l(s.span,{\"data-line\":\"\",children:[n(s.span,{style:{color:\"#9CDCFE\"},children:\"  graphic\"}),n(s.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(s.span,{style:{color:\"#569CD6\"},children:\"{\"}),n(s.span,{style:{color:\"#808080\"},children:\"<\"}),n(s.span,{style:{color:\"#4EC9B0\"},children:\"SonicBento\"}),n(s.span,{style:{color:\"#9CDCFE\"},children:\" bottomGradientClassName\"}),n(s.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(s.span,{style:{color:\"#CE9178\"},children:'\"from-white\"'}),n(s.span,{style:{color:\"#9CDCFE\"},children:\" audioWaveCount\"}),n(s.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(s.span,{style:{color:\"#569CD6\"},children:\"{\"}),n(s.span,{style:{color:\"#B5CEA8\"},children:\"50\"}),n(s.span,{style:{color:\"#569CD6\"},children:\"}\"}),n(s.span,{style:{color:\"#9CDCFE\"},children:\" wrapperClassName\"}),n(s.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(s.span,{style:{color:\"#CE9178\"},children:'\"bg-green-500\"'}),n(s.span,{style:{color:\"#808080\"},children:\" />\"}),n(s.span,{style:{color:\"#569CD6\"},children:\"}\"})]}),\"\\n\",l(s.span,{\"data-line\":\"\",children:[n(s.span,{style:{color:\"#9CDCFE\"},children:\"  fade\"}),n(s.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(s.span,{style:{color:\"#569CD6\"},children:\"{\"}),n(s.span,{style:{color:\"#D4D4D4\"},children:\"[\"}),n(s.span,{style:{color:\"#CE9178\"},children:'\"bottom\"'}),n(s.span,{style:{color:\"#D4D4D4\"},children:\"]\"}),n(s.span,{style:{color:\"#569CD6\"},children:\"}\"})]}),\"\\n\",l(s.span,{\"data-line\":\"\",children:[n(s.span,{style:{color:\"#9CDCFE\"},children:\"  className\"}),n(s.span,{style:{color:\"#D4D4D4\"},children:\"=\"}),n(s.span,{style:{color:\"#CE9178\"},children:'\"max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl\"'})]}),\"\\n\",n(s.span,{\"data-line\":\"\",children:n(s.span,{style:{color:\"#808080\"},children:\"/>\"})})]})})})]})}return{default:function(e={}){const{wrapper:l}=e.components||{};return l?n(l,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};function _missingMdxReference(e,n){throw new Error(\"Expected \"+(n?\"component\":\"object\")+\" `\"+e+\"` to be defined: you likely forgot to import, pass, or provide it.\")}",
+    "permalink": "/docs/sonic-bento-card"
   }
 ]

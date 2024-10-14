@@ -9,7 +9,7 @@ import DesignBoard from "../bento-grid-components/design-board";
 
 const BentoGrid = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-6 lg:grid-rows-2 gap-4">
+    <div className="grid grid-cols-1 lg:grid-cols-6 lg:grid-rows-2 gap-4 h-full w-full">
       <BentoCard
         eyebrow="Audio Analysis"
         title="Get perfect clarity"
